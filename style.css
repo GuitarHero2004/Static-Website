@@ -13,6 +13,7 @@ img {
 button {
     border-color: crimson;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .clickable {
@@ -138,7 +139,13 @@ h2 a {
     color: white;
 }
 
+.container a {
+    padding: 10px;
+}
 
+#categories:nth-child(2) > .category_books:first-child {
+    margin 0;
+}
 /* All subcategories */
 
 #categories > div[id^="subcategory"] {
