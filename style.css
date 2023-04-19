@@ -12,7 +12,7 @@ img {
 /* button for entering book details */
 
 .clickable {
-    -webkit-transition-duration: 0.4s; /* Safari */  transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; transition-duration: 0.4s;
     cursor: pointer;}
     
 .clickable:hover {  
@@ -22,6 +22,10 @@ img {
 .non-clickable {
     opacity: 0.8;
     pointer-events: none;
+}
+
+a.clickable a.non-clickable {
+    padding: 10px;
 }
 
 /* button for entering book details */
@@ -142,6 +146,38 @@ h2 a {
 
 /* section */
 
+/* Breadcrumb */
+
+ul.breadcrumb {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 10px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li a {
+    display: inline;
+    color: black;
+    font-size: 150% ;
+}
+
+ul.breadcrumb li + li:before {
+    content: "/";
+    font-size: 150%;
+    padding: 8px;
+}
+
+ul.breadcrumb li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Breadcrumb */
+
 /* All subcategories */
 
 #categories > div[id^="subcategory"] {
@@ -152,6 +188,11 @@ h2 a {
 .subcategory_books > div {
     display: inline-block;
     width: 24%;
+}
+
+.bookimages {
+    max-width: 100%;
+    max-height: 300px;
 }
 
 /* All subcategories */
@@ -183,23 +224,62 @@ footer {
 
 /* footer */
 
-/* Fiction */
+/* Book details */
 
-.bookimages {
-    max-width: 100%;
-    max-height: 300px;
+#book_detail_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-/* Fiction */
+#book_detail_images > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
-/* Non-Fiction */
+#book_detail_images > div:first-child > #book_detail_subimages {
+    margin-left: 50px;
+}
 
 
+#book_detail_images img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    max-height: 450px;
+}
 
-/* Non-Fiction */
+#main_image {
+    display: flex;
+    align-items: center;
+}
 
-/* Media Query */
+#book_detail_subimages {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#book_detail_subimages img {
+    max-width: 100%;
+    max-height: 150px;
+    margin: 20px;
+} 
+
+#book_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#book_description {
+    display: flex;
+    flex-direction: row;
+}
 
 
+/* Book details */
 
-/* Media Query */
