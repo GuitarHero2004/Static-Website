@@ -6,15 +6,10 @@
 
 img {
     aspect-ratio: 2/3;
+    margin: 0;
 }
 
-/* button */
-
-button {
-    border-color: crimson;
-    border-radius: 5px;
-    padding: 10px;
-}
+/* button for entering book details */
 
 .clickable {
     -webkit-transition-duration: 0.4s; /* Safari */  transition-duration: 0.4s;
@@ -29,6 +24,7 @@ button {
     pointer-events: none;
 }
 
+/* button for entering book details */
 
 /* header */
 
@@ -72,6 +68,8 @@ h1 a {
     color: white;
 }
 
+/* header */
+
 /* section */
 
 img {
@@ -89,9 +87,6 @@ a {
     justify-content: center;
 }
 
-a:hover {
-    color: cyan;
-}
 
 h2 a {
     text-align: center;
@@ -117,11 +112,12 @@ h2 a {
 
 .homepage_bookimages {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 300px;
 }
 
 .bookname {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 10px;
@@ -143,9 +139,9 @@ h2 a {
     padding: 10px;
 }
 
-#categories:nth-child(2) > .category_books:first-child {
-    margin 0;
-}
+
+/* section */
+
 /* All subcategories */
 
 #categories > div[id^="subcategory"] {
@@ -158,6 +154,7 @@ h2 a {
     width: 24%;
 }
 
+/* All subcategories */
 
 /* footer */
 
@@ -184,43 +181,25 @@ footer {
     color: white;
 }
 
+/* footer */
 
 /* Fiction */
 
 .bookimages {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 300px;
 }
 
+/* Fiction */
 
 /* Non-Fiction */
 
 
 
+/* Non-Fiction */
 
 /* Media Query */
 
-/* @media (min-width:480px) {
-    .category_books {
-        background-color: red;
-    }
-}
 
 
-@media (min-width: 768px) {
-    .category_books {
-        background-color: aqua;
-    }
-}
-
-@media (min-width: 1024px) {
-    .category_books {
-        background-color: chocolate;
-    }
-}
-
-@media (min-width: 1280px) {
-    .category_books {
-        background-color: sandybrown;
-    }
-} */
+/* Media Query */
