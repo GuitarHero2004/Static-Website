@@ -10,6 +10,53 @@ img {
 }
 
 
+/* Youtube video */
+
+#youtube_video {
+    margin: 10px 10px 10px 10px;
+}
+
+#categories .container:first-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+#categories > div[class^="container"]:first-child {
+    border: 1px dashed black;
+}
+
+/* Youtube video */
+
+
+/* Quotes */
+
+#categories .container:first-child #quotes {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+}
+
+#quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#quotes p:first-child {
+    text-align: center;
+}
+
+#quotes p:last-child {
+    text-align: end;
+    margin: 5px 30px 5px 30px;
+}
+
+#quotes p:last-child::before {
+    content: "- ";
+}
+
+/* Quotes */
+
+
 /* button for entering book details */
 
 .clickable {
@@ -39,6 +86,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin: 10px 100px 0 100px ;
 }
 
 header nav > div {
@@ -184,11 +232,11 @@ ul.breadcrumb li a:hover {
 
 /* All subcategories */
 
-#categories > div[id^="subcategory"] {
-    border: 1px solid black;
-    margin: 12px 0;
+#subcategories > div[class^="container"] {
+    border: 2px solid black;
+    margin: 30px 0;
+    border-radius: 20px;
 }
-
 .subcategory_books > div {
     display: inline-block;
     width: 24%;
@@ -285,14 +333,23 @@ footer {
     justify-content: center;
 }
 
+#book_price div:first-child > h2 {
+    font-size: 300%;
+}
+
+#book_price div:first-child > p  {
+    font-size: 200%;
+}
+
 #book_price div:first-child {
     margin-bottom: 30px;
 }
 
 button {
-    border-radius: 10px;
+    border-radius: 20px;
     font-weight: bold;
-    padding: 10px 10px 10px 10px;
+    font-size: 200%;
+    padding: 25px 50px 25px 50px;
 }
 
 /* Book details */
@@ -313,13 +370,13 @@ button {
 #book_description h1 a{
     color: black;
     justify-content: flex-start;
-    margin-left: 15px;
+    margin: 15px 10px 10px 10px;
     font-family: "Garamond", serif;
 }
 
 #book_description p {
     text-align: left;
-    margin-left: 15px;
+    margin: 15px 10px 10px 10px;
 }
 
 
