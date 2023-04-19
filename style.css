@@ -86,7 +86,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 10px 100px 0 100px ;
+    margin: 20px 100px 20px 100px ;
 }
 
 header nav > div {
@@ -254,6 +254,7 @@ ul.breadcrumb li a:hover {
 
 footer {
     background-color:black;
+    margin: 0 70px 10px 70px
 }
 
 .bottom_nav {
