@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
     <link rel="import" href="assets\images">
     <link rel="icon" href="assets\images\beta.png">
     <title>Contact Page</title>
@@ -60,7 +63,7 @@
                         Phone number:
                         <span>*</span>
                     </label>
-                    <input type="number" name="phone_number" id="phone_number" required>
+                    <input type="text" name="phone_number" id="phone_number" required>
                 </p>
                 <p>
                     <label for="contact_preferences">
@@ -69,11 +72,13 @@
                     </label>
                     <label class="container_checkbox">
                         By email
-                        <input type="checkbox" name="contact_preferences" value="By_email" checked="checked" required>
+                        <input type="checkbox" name="contact_preferences" id="prefer_email" value="By_email" checked="checked" required>
+                        <span class="tick_checkmark"></span>
                     </label>
                     <label class="container_checkbox">
                         By phone
-                        <input type="checkbox" name="contact_preferences" value="By_phone">
+                        <input type="checkbox" name="contact_preferences" id="prefer_phone" value="By_phone" checked="checked">
+                        <span class="tick_checkmark"></span>
                     </label>
                 </p>
                 <p>
@@ -84,16 +89,19 @@
                     <label class="container_radio">
                         Yes
                         <input type="radio" id="yes" name="weekly_newsletter" value="Yes" checked="checked">
+                        <span class="radio_checkmark">
+
+                        </span>
                     </label>
                     <label class="container_radio">
                         No
                         <input type="radio" id="no" name="weekly_newsletter" value="No">
+                        <span class="radio_checkmark"></span>
                     </label>
                 </p>
                 <p>
                     <label for="extra_notes">
                         Extra notes:
-                        <span>*</span>
                     </label>
                     <textarea name="" id="" cols="20" rows="5" placeholder="Anything you would love to notify us?"></textarea>
                 </p>

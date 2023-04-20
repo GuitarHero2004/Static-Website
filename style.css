@@ -115,6 +115,10 @@ header > nav > div > h1 {
     font-size: 150%;
 }
 
+.top_nav a {
+    font-family: 'Signika Negative', sans-serif;;
+}
+
 #topnav {
     width: 100%;
     display: flex;
@@ -269,7 +273,7 @@ ul.breadcrumb li a:hover {
 /* All subcategories */
 
 
-/* definition */
+/* Definition */
 
 #subcategories > div[class^="container"]:first-child {
     border: 1px dotted black;
@@ -300,10 +304,10 @@ ul.breadcrumb li a:hover {
     padding: 5px 10px 5px 10px;
 }
 
-/* definition */
+/* Definition */
 
 
-/* footer */
+/* Footer */
 
 footer {
     background-color:black;
@@ -327,9 +331,10 @@ footer {
 
 .bottom_nav a {
     color: white;
+    font-family: 'Signika Negative', sans-serif;
 }
 
-/* footer */
+/* Footer */
 
 
 /* Book details */
@@ -444,31 +449,99 @@ button {
 /* Contact Page */
 
 form {
+    display: table;
+    margin: 10px;
+}
+
+main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 main h1 {
     text-align: center;
+    font-family: "Pacifico", cursive;
 }
 
 .contact_page {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:lightskyblue;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 label {
     display: table-cell;
+    text-align: center;
+    padding: 20px;
+}
+
+label span {
+    color: red;
+}
+
+#name #email #phone_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prefer_phone #prefer_email {
+    display: inline;
 }
 
 .contact_page p {
-    display: flex;
-    justify-content: center;
+    display: table-row;
+    color: white;
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contact_page button {
     font-size: 100%;
     padding: 5px 10px 5px 10px;
+}
+
+.container_checkbox {
+    display: block;
+    position: relative;
+    margin: 5px 0 5px 0;
+    cursor: pointer;
+}
+
+.container_radio {
+    display: block;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: left;
+    cursor: pointer;
+}
+
+p .container_radio {
+    text-align: center;
+}
+
+p textarea {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+textarea {
+    font-size: 15px;
+    resize: none;
+    overflow: auto;
+    border: none;
 }
 
 /* Contact Page */
