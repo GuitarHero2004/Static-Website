@@ -544,4 +544,17 @@ textarea {
     border: none;
 }
 
+
+#reset_and_submit {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* Contact Page */
+
+
+/* Media query */
+
+
+
+/* Media query */
