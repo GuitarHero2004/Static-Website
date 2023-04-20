@@ -28,7 +28,7 @@ img {
 /* Youtube video */
 
 
-/* Quotes */
+/* quotes */
 
 #categories .container:first-child #quotes {
     display: flex;
@@ -41,20 +41,29 @@ img {
     justify-content: space-evenly;
 }
 
+#quotes h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 300%;
+}
+
+#quotes div:first-child {
+    margin-bottom: 30px;
+}
+
 #quotes p:first-child {
     text-align: center;
 }
 
 #quotes p:last-child {
     text-align: end;
-    margin: 5px 30px 5px 30px;
+    margin: 5px 150px 5px 150px;
 }
 
 #quotes p:last-child::before {
     content: "- ";
 }
 
-/* Quotes */
+/* quotes */
 
 
 /* button for entering book details */
@@ -254,7 +263,6 @@ ul.breadcrumb li a:hover {
 
 footer {
     background-color:black;
-    margin: 0 70px 10px 70px
 }
 
 .bottom_nav {
