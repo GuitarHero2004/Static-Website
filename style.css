@@ -243,9 +243,10 @@ ul.breadcrumb li a:hover {
 
 #subcategories > div[class^="container"] {
     border: 2px solid black;
-    margin: 30px 0;
+    margin: 30px 0 30px 10px;
     border-radius: 20px;
 }
+
 .subcategory_books > div {
     display: inline-block;
     width: 24%;
@@ -257,6 +258,40 @@ ul.breadcrumb li a:hover {
 }
 
 /* All subcategories */
+
+
+/* definition */
+
+#subcategories > div[class^="container"]:first-child {
+    border: 1px dotted black;
+}
+
+#subcategories .container:first-child {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+
+.container:first-child h1 a {
+    font-family: "Pacifico", cursive;
+    color: black;
+    font-size: 200%;
+}
+
+.container:first-child div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container:first-child p {
+    text-align: left;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+/* definition */
 
 
 /* footer */
