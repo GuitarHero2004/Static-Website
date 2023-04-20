@@ -370,6 +370,10 @@ button {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    border: 1px black dashed;
+    margin: 10px 20px 10px 20px;
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
 }
 
 #book_description > div:last-child {
