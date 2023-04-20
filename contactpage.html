@@ -10,9 +10,114 @@
     <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
     <link rel="import" href="assets\images">
     <link rel="icon" href="assets\images\beta.png">
-    <title>Contact - Beta Online Bookstore</title>
+    <title>Contact Page</title>
 </head>
 <body>
-    
+    <header>
+        <nav id="topnav">
+            <div>
+                <h1><a href="index.html">Beta Online Bookstore</a></h1>
+            </div>
+            <div>
+                <ul>
+                    <li class="top_nav"><a href="index.html">Home</a></li>
+                    <li class="top_nav"><a href="fiction.html">Fiction</a></li>
+                    <li class="top_nav"><a href="non-fiction.html">Non-Fiction</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+    <main>
+        <h1>Contact Us</h1>
+        <section class="contact_page">
+            <form method="post">
+                <p>
+                    <label for="contact_purpose">
+                        Contact purpose:
+                        <span>*</span>
+                    </label>
+                    <select name="contact_purpose" id="contact_purpose" required>
+                        <option value="sell_book">I want to sell books</option>
+                        <option value="buy_book">I want to buy books</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="name">
+                        Name:
+                        <span>*</span>
+                    </label>
+                    <input type="text" name="name" id="name" required>
+                </p>
+                <p>
+                    <label for="email">
+                        Email:
+                        <span>*</span>
+                    </label>
+                    <input type="text" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="phone_number">
+                        Phone number:
+                        <span>*</span>
+                    </label>
+                    <input type="number" name="phone_number" id="phone_number" required>
+                </p>
+                <p>
+                    <label for="contact_preferences">
+                        Contact preferences:
+                        <span>*</span>
+                    </label>
+                    <label class="container_checkbox">
+                        By email
+                        <input type="checkbox" name="contact_preferences" value="By_email" checked="checked" required>
+                    </label>
+                    <label class="container_checkbox">
+                        By phone
+                        <input type="checkbox" name="contact_preferences" value="By_phone">
+                    </label>
+                </p>
+                <p>
+                    <label for="newsletter">
+                        Receive weekly newsletter:
+                        <span>*</span>
+                    </label>
+                    <label class="container_radio">
+                        Yes
+                        <input type="radio" id="yes" name="weekly_newsletter" value="Yes" checked="checked">
+                    </label>
+                    <label class="container_radio">
+                        No
+                        <input type="radio" id="no" name="weekly_newsletter" value="No">
+                    </label>
+                </p>
+                <p>
+                    <label for="extra_notes">
+                        Extra notes:
+                        <span>*</span>
+                    </label>
+                    <textarea name="" id="" cols="20" rows="5" placeholder="Anything you would love to notify us?"></textarea>
+                </p>
+                <p>
+                    <label for="submit">
+                        <button class="clickable">Clear</button>
+                    </label>
+                    <label for="reset">
+                        <button class="clickable">Submit</button>
+                    </label>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav id="bottomnav">
+            <ul>
+                <li class="bottom_nav"><a href="#">About Us</a></li>
+                <li class="bottom_nav"><a href="#">Privacy Policy</a></li>
+                <li class="bottom_nav"><a href="#">Terms</a></li>
+                <li class="bottom_nav"><a href="#">Copyright</a></li>
+                <li class="bottom_nav"><a href="contactpage.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
