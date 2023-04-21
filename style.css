@@ -1,3 +1,14 @@
+/*   RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Tran Nguyen Anh Minh
+  ID: s3979367
+  Acknowledgement: Acknowledge the resources that you use here. */
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -73,7 +84,8 @@ img {
     cursor: pointer;}
     
 .clickable:hover {  
-    background-color: crimson;  color: white
+    background-color: crimson;  
+    color: white
 }
 
 .non-clickable {
@@ -96,6 +108,7 @@ header {
     justify-content: space-between;
     flex-direction: row;
     margin: 20px 100px 20px 100px ;
+    z-index: 3;
 }
 
 header nav > div {
@@ -108,13 +121,19 @@ header > nav > div > h1 {
     margin: 10px;
 }
 
+header input {
+    display: none;
+}
+
 header nav ul li a {
     position: relative;
-    z-index: 10;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
 }
 
 header nav ul li a:hover {
-    color: green;
+    color: red;
 }
 
 .top_nav {
@@ -132,7 +151,7 @@ header nav ul li a:hover {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 6px 12px;
+    padding: 6px 5px;
     font-size: small
 }
 
@@ -169,6 +188,11 @@ a {
 }
 
 
+.container {
+    padding: 10px;
+    width: 100%;
+}
+
 h2 a {
     text-align: center;
     font-family: "Aladin", cursive ;
@@ -182,13 +206,13 @@ h2 a {
 
 #categories > div[class^="container"] {
     border: 2px solid black;
-    margin: 30px 10px 30px 10px;
+    margin: 30px 0 30px 0;
     border-radius: 20px;
 }
 
 .category_books > div {
     display: inline-block;
-    width: 25%;
+    width: 24%;
     margin: 0 10px;
 }
 
@@ -265,7 +289,7 @@ ul.breadcrumb li a:hover {
 
 #subcategories > div[class^="container"] {
     border: 2px solid black;
-    margin: 30px 10px 30px 10px;
+    margin: 30px 0 30px 0;
     border-radius: 20px;
 }
 
@@ -579,6 +603,81 @@ textarea {
 /* Media query */
 
 @media screen and (max-width: 960px) {
+    
+    header h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    #topnav div:last-child {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    #topnav ul {
+        overflow: hidden;
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #topnav ul a{
+        display: block;
+    }
+
+    input {
+        display: block;
+    }
+
+    header .menu_icon {
+        cursor: pointer;
+        padding: 28px 20px;
+        position: relative;
+    }
+
+    header .menu_icon .nav_icon {
+        background: white;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+
+    header .menu_icon .nav_icon::before {
+        background:white;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 5px;
+    }
+
+    header .menu_icon .nav_icon::after {
+        background:white;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: -5px;
+    }
+
+    header .menu_button {
+        display: none;
+    }
+
+    header .menu_button:checked ~ #topnav ul {
+        max-height: 240px;
+    }
+
+
+
+
+
     #categories .container:first-child {
         display: flex;
         flex-direction: column;
