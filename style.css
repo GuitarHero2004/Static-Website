@@ -91,7 +91,7 @@ a.clickable a.non-clickable {
 /* header */
 
 header {
-    background-color: black;
+    background-color: darkgrey;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -453,6 +453,12 @@ form {
     margin: 10px;
 }
 
+form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -471,15 +477,17 @@ main h1 {
     justify-content: center;
     align-items: center;
     background-color:lightskyblue;
-    width: 70%;
+    width: 60%;
     margin-top: 50px;
     margin-bottom: 30px;
+    font-family: "monsterrat", sans-serif;
 }
 
 label {
     display: table-cell;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+    margin: 5px;
 }
 
 label span {
@@ -494,13 +502,6 @@ label span {
 
 #prefer_phone #prefer_email {
     display: inline;
-}
-
-.contact_page p {
-    display: table-row;
-    color: white;
-    font-size: 150%;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .contact_page button {
@@ -521,7 +522,7 @@ label span {
     padding: 5px 10px 5px 10px;
     margin-bottom: 15px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: auto;
     text-align: left;
     cursor: pointer;
 }
@@ -544,10 +545,20 @@ textarea {
     border: none;
 }
 
-
 #reset_and_submit {
     display: flex;
     justify-content: space-around;
+    margin: 10px 0;
+}
+
+#reset_and_submit label:last-child button {
+    background-color: red;
+    color: white;
+}
+
+.reset-submit_buttons {
+    display: flex;
+    justify-content: center;
 }
 
 /* Contact Page */
@@ -556,14 +567,11 @@ textarea {
 /* Media query */
 
 
-/* @media only screen and (max-width: 480px) {
-    #categories .container:first-child {
-        display: flex;
-        flex-direction: column;
-    }
+/* Hamburger menu */
 
 
-} */
+
+/* Hamburger menu */
 
 
 @media only screen and (max-width: 960px) {
@@ -572,12 +580,59 @@ textarea {
         flex-direction: column;
     }
 
+    #subcategories .container:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #subcategories img {
+        padding: 10px;
+    }
+
     section {
         margin: 20px 20px 20px 20px;
     }
 
+    .breadcrumb {
+        font-size: 70%;
+    } 
 
+    #book_detail_images {
+        display: flex;
+        flex-direction: column;
+    }
 
+    #book_detail_images > div:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main_image {
+        display: flex;
+        justify-content: center;
+    }
+
+    #book_detail_subimages {
+        display: flex;
+        flex-direction: row;
+        margin: 50px;
+        justify-content: space-around;
+    }
+
+    .contact_page {
+        align-items: flex-start;
+    }
+
+    form div {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    label {
+        font-size: larger;
+     ;
+    }
 }
 
 /* Media query */

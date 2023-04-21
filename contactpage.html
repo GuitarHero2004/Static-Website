@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
     <link rel="import" href="assets\images">
     <link rel="icon" href="assets\images\beta.png">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <title>Contact Page</title>
 </head>
 <body>
@@ -34,7 +35,7 @@
         <h1>Contact Us</h1>
         <section class="contact_page">
             <form method="post">
-                <p>
+                <div class="contact_purpose">
                     <label for="contact_purpose">
                         Contact purpose:
                         <span>*</span>
@@ -43,29 +44,29 @@
                         <option value="sell_book">I want to sell books</option>
                         <option value="buy_book">I want to buy books</option>
                     </select>
-                </p>
-                <p>
+                </div>
+                <div class="name">
                     <label for="name">
                         Name:
                         <span>*</span>
                     </label>
-                    <input type="text" name="name" id="name" required>
-                </p>
-                <p>
+                    <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="email">
                     <label for="email">
                         Email:
                         <span>*</span>
                     </label>
-                    <input type="text" name="email" id="email" required>
-                </p>
-                <p>
+                    <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="phone_number">
                     <label for="phone_number">
                         Phone number:
                         <span>*</span>
                     </label>
-                    <input type="text" name="phone_number" id="phone_number" required>
-                </p>
-                <p>
+                    <input type="text" name="phone_number" id="phone_number" placeholder="Enter your phone number" required>
+                </div>
+                <div class="contact_preferences">
                     <label for="contact_preferences">
                         Contact preferences:
                         <span>*</span>
@@ -80,8 +81,8 @@
                         <input type="checkbox" name="contact_preferences" id="prefer_phone" value="By_phone" checked="checked">
                         <span class="tick_checkmark"></span>
                     </label>
-                </p>
-                <p>
+                </div>
+                <div class="newsletter">
                     <label for="newsletter">
                         Receive weekly newsletter:
                         <span>*</span>
@@ -98,14 +99,14 @@
                         <input type="radio" id="no" name="weekly_newsletter" value="No">
                         <span class="radio_checkmark"></span>
                     </label>
-                </p>
-                <p>
+                </div>
+                <div class="extra_notes">
                     <label for="extra_notes">
                         Extra notes:
                     </label>
                     <textarea name="" id="" cols="20" rows="5" placeholder="Anything you would love to notify us?"></textarea>
-                </p>
-                <p>
+                </div>
+                <div class="reset-submit_buttons">
                     <div id="reset_and_submit">
                         <label for="submit">
                             <button class="clickable">Clear</button>
@@ -114,7 +115,7 @@
                             <button class="clickable">Submit</button>
                         </label>
                     </div>
-                </p>
+                </div>
             </form>
         </section>
     </main>
