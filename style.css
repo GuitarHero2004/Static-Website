@@ -556,5 +556,28 @@ textarea {
 /* Media query */
 
 
+/* @media only screen and (max-width: 480px) {
+    #categories .container:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+} */
+
+
+@media only screen and (max-width: 960px) {
+    #categories .container:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        margin: 20px 20px 20px 20px;
+    }
+
+
+
+}
 
 /* Media query */
