@@ -108,6 +108,15 @@ header > nav > div > h1 {
     margin: 10px;
 }
 
+header nav ul li a {
+    position: relative;
+    z-index: 10;
+}
+
+header nav ul li a:hover {
+    color: green;
+}
+
 .top_nav {
     list-style-type: none;
     display: inline-block;
@@ -314,6 +323,10 @@ footer {
     padding: 0 50px 0 50px;
 }
 
+footer nav ul li a:hover {
+    color: gold;
+}
+
 .bottom_nav {
     list-style-type: none;
     display: inline-block;
@@ -451,11 +464,12 @@ button {
 form {
     display: table;
     margin: 10px;
+    width: 100%;
 }
 
 form div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px 0;
 }
 
@@ -512,7 +526,6 @@ label span {
 .container_checkbox {
     display: block;
     position: relative;
-    margin: 5px 0 5px 0;
     cursor: pointer;
 }
 
@@ -520,9 +533,8 @@ label span {
     display: block;
     position: relative;
     padding: 5px 10px 5px 10px;
-    margin-bottom: 15px;
     cursor: pointer;
-    font-size: auto;
+    font-size: medium;
     text-align: left;
     cursor: pointer;
 }
@@ -566,15 +578,7 @@ textarea {
 
 /* Media query */
 
-
-/* Hamburger menu */
-
-
-
-/* Hamburger menu */
-
-
-@media only screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     #categories .container:first-child {
         display: flex;
         flex-direction: column;
@@ -619,8 +623,20 @@ textarea {
         justify-content: space-around;
     }
 
+    #book_price div:first-child {
+        margin-top: 15px;
+    }
+
+    #book_price div:last-child {
+        margin: 15px 5px 15px 5px;
+    }
+
     .contact_page {
         align-items: flex-start;
+    }
+
+    form {
+        width: 95%;
     }
 
     form div {
@@ -631,7 +647,27 @@ textarea {
 
     label {
         font-size: larger;
-     ;
+    }
+
+    .contact_page select, .name input, .email input, .phone_number input {
+        flex: 1;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    .extra_notes {
+        flex-direction: row;
+    }
+
+    .reset-submit_buttons {
+        flex-direction: row;
+    }
+
+    #reset_and_submit {
+        flex-direction: row;
     }
 }
 
