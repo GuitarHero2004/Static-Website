@@ -4,7 +4,9 @@
   Assessment: Assignment 1
   Author: Tran Nguyen Anh Minh
   ID: s3979367
-  Acknowledgement: Acknowledge the resources that you use here. */
+  Acknowledgement: 
+  
+  */
 
 
 
@@ -111,18 +113,18 @@ header {
     z-index: 3;
 }
 
-header nav > div {
-    display: flex;
-    justify-content: space-between;
-}
-
-header > nav > div > h1 {
+header > div > h1 {
     font-family: 'Brush Script MT', cursive;
     margin: 10px;
 }
 
 header input {
     display: none;
+}
+
+.topnav_links {
+    display: flex;
+    align-items: center;
 }
 
 header nav ul li a {
@@ -150,7 +152,7 @@ header nav ul li a:hover {
 #topnav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 6px 5px;
     font-size: small
 }
@@ -521,7 +523,7 @@ main h1 {
     font-family: "monsterrat", sans-serif;
 }
 
-label {
+form label {
     display: table-cell;
     text-align: center;
     padding: 5px;
@@ -604,79 +606,42 @@ textarea {
 
 @media screen and (max-width: 960px) {
     
-    header h1 {
-        display: flex;
-        align-items: center;
-    }
-
-    #topnav div:last-child {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    
-    #topnav ul {
-        overflow: hidden;
-        clear: both;
-        max-height: 0;
-        transition: max-height .2s ease-out;
+    header {
         display: flex;
         flex-direction: column;
     }
 
-    #topnav ul a{
+    header h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav_links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
         display: block;
     }
 
-    input {
-        display: block;
+    .category_books, .subcategory_books {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    header .menu_icon {
-        cursor: pointer;
-        padding: 28px 20px;
-        position: relative;
+    .category_books div, .subcategory_books div {
+        display: flex;
+        margin: 10px 10px;
     }
-
-    header .menu_icon .nav_icon {
-        background: white;
-        display: block;
-        height: 2px;
-        width: 18px;
-        position: relative;
-        transition: background .2s ease-out;
-    }
-
-    header .menu_icon .nav_icon::before {
-        background:white;
-        content: "";
-        display: block;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-        top: 5px;
-    }
-
-    header .menu_icon .nav_icon::after {
-        background:white;
-        content: "";
-        display: block;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-        top: -5px;
-    }
-
-    header .menu_button {
-        display: none;
-    }
-
-    header .menu_button:checked ~ #topnav ul {
-        max-height: 240px;
-    }
-
-
-
-
 
     #categories .container:first-child {
         display: flex;
@@ -768,6 +733,11 @@ textarea {
     #reset_and_submit {
         flex-direction: row;
     }
+
+    #bottomnav {
+        justify-content: center;
+    }
+
 }
 
 /* Media query */
