@@ -212,6 +212,7 @@ h2 a {
 
 #categories {
     padding: 10px;
+    margin-bottom: 15px;
 }
 
 #categories > div[class^="container"] {
@@ -295,6 +296,7 @@ ul.breadcrumb li a:hover {
 
 #subcategories {
     padding: 10px;
+    margin: 15px;
 }
 
 #subcategories > div[class^="container"] {
